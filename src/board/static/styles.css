@@ -9,6 +9,11 @@
     text-align: center;
   }
   
+  html, body, #map {
+    height: 100%;
+    width: 100vw;
+  }
+
   a,
   a:visited {
     color: #007bff;

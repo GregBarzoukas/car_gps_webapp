@@ -9,4 +9,11 @@ def home():
 
 @bp.route("/about")
 def about():
-    return render_template("pages/about.html")
+    markers = [
+        {
+            'lat': 0,
+            'lon': 0,
+            'popup': 'This is the middle of the map.'
+        }
+    ]
+    return render_template("pages/about.html", markers=markers)
